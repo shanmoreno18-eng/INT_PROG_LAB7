@@ -5,10 +5,10 @@ export class Alert {
     autoClose?: boolean;
     keepAfterRouteChange?: boolean;
     fade?: boolean;
-        
-        constructor(init?: Partial<Alert>) {
-            Object.assign(this, init);
-        }
+
+    constructor(init?: Partial<Alert>) {
+        Object.assign(this, init);
+    }
 }
 
 export enum AlertType {

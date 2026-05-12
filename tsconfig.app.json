@@ -2,14 +2,16 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "rootDir": "src",           // <--- Add this line here
-    "types": []
+    "rootDir": "src",
+    "types": [],
+    "noPropertyAccessFromIndexSignature": false
   },
   "files": [
     "src/main.ts",
-    "src/server.ts"
+    "src/main.server.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/**/*.ts"
   ]
 }

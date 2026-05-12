@@ -1,9 +1,9 @@
-import {catchError, of } from 'rxjs';
-import { AccountService } from '../_services';
+import { catchError, of } from 'rxjs';
+import { AccountService } from '@app/_services';
 
-export function appInitializer(accountService: AccountService){
-    return () => accountService.refreshToken()
-    .pipe(
-        catchError(() => of ())
+export function appInitializer(accountService: AccountService) {
+  return () =>
+    accountService.refreshToken().pipe(
+      catchError(() => of(null))
     );
 }
