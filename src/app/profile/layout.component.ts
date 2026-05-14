@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-account-layout',
+  selector: 'app-profile-layout',
   templateUrl: './Layout.component.html',
   standalone: false
 })
