@@ -1,4 +1,4 @@
-export const environment = {
+﻿export const environment = {
   production: true,
-  apiUrl: 'https://node-mysql-api-00an.onrender.com/accounts'
+  apiUrl: 'https://node-mysql-api-00an.onrender.com'
 };
